@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct WelcomeView : View {
+    @Binding var selectedTab : Int
     @State private var todayWorkoutCount = 0
     var body : some View {
         VStack {
@@ -31,10 +32,10 @@ struct WelcomeView : View {
             }
             VStack(alignment:.center) {
                 Button("Get Start") {
-                    
+                    selectedTab = 0
                 }.font(.largeTitle)
                 .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
-                ProgressView("Today Progress :  \(todayWorkoutCount) / \(5)",value: Float(todayWorkoutCount) , total:100)
+                ProgressView("Today Progress :  \(todayWorkoutCount) / \(5)",value: Float(todayWorkoutCount) , total:5)
                     .frame(width: 200, height: 200)
             }
         }
@@ -43,7 +44,7 @@ struct WelcomeView : View {
 
 struct WelcomeView_Previews : PreviewProvider {
     static var previews : some View {
-        WelcomeView()
+        WelcomeView(selectedTab: .constant(0))
     }
 }
 
