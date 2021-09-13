@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		121469F226EF8DAD0026519F /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121469F126EF8DAD0026519F /* ExerciseView.swift */; };
 		1230831F26ED20EF000D53A8 /* MyWorkOutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1230831E26ED20EF000D53A8 /* MyWorkOutApp.swift */; };
 		1230832126ED20EF000D53A8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1230832026ED20EF000D53A8 /* ContentView.swift */; };
 		1230832326ED20F1000D53A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1230832226ED20F1000D53A8 /* Assets.xcassets */; };
 		1230832626ED20F1000D53A8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1230832526ED20F1000D53A8 /* Preview Assets.xcassets */; };
+		124D908426EFAE7B008A2E5B /* Burpee.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 121469EF26EF85090026519F /* Burpee.mp4 */; };
+		124D908526EFAE81008A2E5B /* Lunges.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 121469EE26EF85050026519F /* Lunges.mp4 */; };
+		124D908626EFAE85008A2E5B /* ObiqueAndCore.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 121469EB26EF84FA0026519F /* ObiqueAndCore.mp4 */; };
+		124D908726EFAE89008A2E5B /* Planks.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 121469EC26EF84FB0026519F /* Planks.mp4 */; };
+		124D908826EFAE8E008A2E5B /* Squat.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 121469ED26EF85040026519F /* Squat.mp4 */; };
+		124D908926EFAE93008A2E5B /* Pushups.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 121469F026EF850B0026519F /* Pushups.mp4 */; };
 		12D16D2D26EF601000F8777A /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D16D2C26EF601000F8777A /* WelcomeView.swift */; };
-		12D16D3626EF62C000F8777A /* ObiqueAndCore.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 12D16D2F26EF62A700F8777A /* ObiqueAndCore.mp4 */; };
-		12D16D3726EF62C000F8777A /* Burpee.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 12D16D3026EF62AD00F8777A /* Burpee.mp4 */; };
-		12D16D3826EF62C000F8777A /* Pushups.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 12D16D3126EF62B000F8777A /* Pushups.mp4 */; };
-		12D16D3926EF62C000F8777A /* Lunges.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 12D16D3226EF62B200F8777A /* Lunges.mp4 */; };
-		12D16D3A26EF62C000F8777A /* Squat.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 12D16D3326EF62BE00F8777A /* Squat.mp4 */; };
-		12D16D3C26EF62C000F8777A /* Planks.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 12D16D3526EF62C000F8777A /* Planks.mp4 */; };
 		12D16D4026EF72FA00F8777A /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D16D3F26EF72FA00F8777A /* Exercise.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		121469EB26EF84FA0026519F /* ObiqueAndCore.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ObiqueAndCore.mp4; sourceTree = "<group>"; };
+		121469EC26EF84FB0026519F /* Planks.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Planks.mp4; sourceTree = "<group>"; };
+		121469ED26EF85040026519F /* Squat.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Squat.mp4; sourceTree = "<group>"; };
+		121469EE26EF85050026519F /* Lunges.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lunges.mp4; sourceTree = "<group>"; };
+		121469EF26EF85090026519F /* Burpee.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Burpee.mp4; sourceTree = "<group>"; };
+		121469F026EF850B0026519F /* Pushups.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pushups.mp4; sourceTree = "<group>"; };
+		121469F126EF8DAD0026519F /* ExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
 		1230831B26ED20EF000D53A8 /* MyWorkOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWorkOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1230831E26ED20EF000D53A8 /* MyWorkOutApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWorkOutApp.swift; sourceTree = "<group>"; };
 		1230832026ED20EF000D53A8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -29,12 +37,6 @@
 		1230832526ED20F1000D53A8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1230832726ED20F1000D53A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12D16D2C26EF601000F8777A /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
-		12D16D2F26EF62A700F8777A /* ObiqueAndCore.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ObiqueAndCore.mp4; sourceTree = "<group>"; };
-		12D16D3026EF62AD00F8777A /* Burpee.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Burpee.mp4; sourceTree = "<group>"; };
-		12D16D3126EF62B000F8777A /* Pushups.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pushups.mp4; sourceTree = "<group>"; };
-		12D16D3226EF62B200F8777A /* Lunges.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lunges.mp4; sourceTree = "<group>"; };
-		12D16D3326EF62BE00F8777A /* Squat.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Squat.mp4; sourceTree = "<group>"; };
-		12D16D3526EF62C000F8777A /* Planks.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Planks.mp4; sourceTree = "<group>"; };
 		12D16D3F26EF72FA00F8777A /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -49,6 +51,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		121469EA26EF84C40026519F /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				121469EF26EF85090026519F /* Burpee.mp4 */,
+				121469EE26EF85050026519F /* Lunges.mp4 */,
+				121469EB26EF84FA0026519F /* ObiqueAndCore.mp4 */,
+				121469EC26EF84FB0026519F /* Planks.mp4 */,
+				121469F026EF850B0026519F /* Pushups.mp4 */,
+				121469ED26EF85040026519F /* Squat.mp4 */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
 		1230831226ED20EF000D53A8 = {
 			isa = PBXGroup;
 			children = (
@@ -68,10 +83,10 @@
 		1230831D26ED20EF000D53A8 /* MyWorkOut */ = {
 			isa = PBXGroup;
 			children = (
+				121469EA26EF84C40026519F /* Video */,
 				12D16D3E26EF72C400F8777A /* Model */,
 				1230831E26ED20EF000D53A8 /* MyWorkOutApp.swift */,
 				12D16D3D26EF72A200F8777A /* View */,
-				12D16D2E26EF628500F8777A /* Video */,
 				1230832226ED20F1000D53A8 /* Assets.xcassets */,
 				1230832726ED20F1000D53A8 /* Info.plist */,
 				1230832426ED20F1000D53A8 /* Preview Content */,
@@ -87,24 +102,12 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		12D16D2E26EF628500F8777A /* Video */ = {
-			isa = PBXGroup;
-			children = (
-				12D16D3026EF62AD00F8777A /* Burpee.mp4 */,
-				12D16D3226EF62B200F8777A /* Lunges.mp4 */,
-				12D16D2F26EF62A700F8777A /* ObiqueAndCore.mp4 */,
-				12D16D3526EF62C000F8777A /* Planks.mp4 */,
-				12D16D3126EF62B000F8777A /* Pushups.mp4 */,
-				12D16D3326EF62BE00F8777A /* Squat.mp4 */,
-			);
-			path = Video;
-			sourceTree = "<group>";
-		};
 		12D16D3D26EF72A200F8777A /* View */ = {
 			isa = PBXGroup;
 			children = (
 				1230832026ED20EF000D53A8 /* ContentView.swift */,
 				12D16D2C26EF601000F8777A /* WelcomeView.swift */,
+				121469F126EF8DAD0026519F /* ExerciseView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -174,14 +177,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12D16D3726EF62C000F8777A /* Burpee.mp4 in Resources */,
-				12D16D3626EF62C000F8777A /* ObiqueAndCore.mp4 in Resources */,
-				12D16D3C26EF62C000F8777A /* Planks.mp4 in Resources */,
-				12D16D3A26EF62C000F8777A /* Squat.mp4 in Resources */,
-				12D16D3826EF62C000F8777A /* Pushups.mp4 in Resources */,
+				124D908726EFAE89008A2E5B /* Planks.mp4 in Resources */,
+				124D908426EFAE7B008A2E5B /* Burpee.mp4 in Resources */,
+				124D908926EFAE93008A2E5B /* Pushups.mp4 in Resources */,
+				124D908826EFAE8E008A2E5B /* Squat.mp4 in Resources */,
 				1230832626ED20F1000D53A8 /* Preview Assets.xcassets in Resources */,
 				1230832326ED20F1000D53A8 /* Assets.xcassets in Resources */,
-				12D16D3926EF62C000F8777A /* Lunges.mp4 in Resources */,
+				124D908526EFAE81008A2E5B /* Lunges.mp4 in Resources */,
+				124D908626EFAE85008A2E5B /* ObiqueAndCore.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +199,7 @@
 				12D16D4026EF72FA00F8777A /* Exercise.swift in Sources */,
 				12D16D2D26EF601000F8777A /* WelcomeView.swift in Sources */,
 				1230831F26ED20EF000D53A8 /* MyWorkOutApp.swift in Sources */,
+				121469F226EF8DAD0026519F /* ExerciseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
