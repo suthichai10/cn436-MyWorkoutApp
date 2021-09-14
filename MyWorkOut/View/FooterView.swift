@@ -7,14 +7,31 @@
 
 import SwiftUI
 
-struct FooterVIew: View {
+struct FooterView: View {
+    @Binding var selectedTab : Int
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            HStack {
+                ForEach(0..<Exercise.exercise.count) { index in
+                    let fill = (index == selectedTab) ? ".fill" : ""
+                    Image(systemName: "\(index + 1).circle\(fill)")
+                        .onTapGesture {
+                            selectedTab = index
+                        }
+                        .font(.largeTitle)
+                }
+            }
+            Button(NSLocalizedString("History", comment: "History")) {
+                
+            }
+            .padding()
+        }
     }
 }
 
 struct FooterVIew_Previews: PreviewProvider {
     static var previews: some View {
-        FooterVIew()
+        FooterView(selectedTab: .constant(0))
+            .previewLayout(.sizeThatFits)
     }
 }
