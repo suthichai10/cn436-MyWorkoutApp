@@ -11,6 +11,8 @@ import AVKit
 struct ExerciseView : View {
     @State private var timerDone = false
     @State private var showTimer = false
+    @State private var showHistory = false
+    @State private var showSuccess = false
     @Binding var selectedTab : Int
     let index : Int
     var body : some View {
@@ -22,14 +24,20 @@ struct ExerciseView : View {
                         .frame(width: geometry.size.width, height: geometry.size.height * 0.45)
                     HStack {
                         Spacer()
-                        Button(NSLocalizedString("Start", comment: "Start")) {
+                        Button(NSLocalizedString("Start", comment: "Start Button")) {
                             //player.play()
                             showTimer = true
                         }.border(Color.black)
                         Spacer()
-                        Button(NSLocalizedString("Done", comment: "Done")) {
-                            selectedTab += 1
-                        }.border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
+                        Button(NSLocalizedString("Done", comment: "Done Button")) {
+                            if selectedTab + 1 == Exercise.exercise.count {
+                                showSuccess = true
+                            } else {
+                                selectedTab += 1
+                            }
+
+                        }
+                        .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
                         .disabled(!timerDone)
                         Spacer()
                     }
@@ -46,9 +54,15 @@ struct ExerciseView : View {
                         .font(.system(size: geometry.size.height * 0.15,design: .rounded))
                 }
                 Spacer()
-                RatingView()
+                RatingView(rating: AppStorage(wrappedValue:  1, "ratingForExercise\(index + 1)"))
                 Spacer()
-                FooterView(selectedTab:$selectedTab)
+                FooterView(selectedTab:$selectedTab , showHistory: $showHistory)
+            }
+            .fullScreenCover(isPresented: $showHistory) {
+                HistoryView()
+            }
+            .fullScreenCover(isPresented: $showSuccess) {
+                SuccessView(selectedTab: $selectedTab)
             }
         }
     }
