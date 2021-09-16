@@ -7,14 +7,16 @@
 
 import SwiftUI
 
-struct HistoryStroreDevData: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+extension HistoryStore {
 
-struct HistoryStroreDevData_Previews: PreviewProvider {
-    static var previews: some View {
-        HistoryStroreDevData()
+    mutating func createDevData() {
+        exerciseDays = [ExerciseDay(date: Date().addingTimeInterval(-86400), exercises: [
+            Exercise.exercise[0].exerciseName,
+            Exercise.exercise[1].exerciseName,
+            Exercise.exercise[2].exerciseName,
+            Exercise.exercise[3].exerciseName,
+            Exercise.exercise[4].exerciseName,
+            Exercise.exercise[5].exerciseName
+        ])]
     }
 }
