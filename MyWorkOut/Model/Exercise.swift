@@ -5,13 +5,13 @@
 //  Created by suthichai on 13/9/2564 BE.
 //
 
-import SwiftUI
+import Foundation
 
 struct Exercise {
     let exerciseName : String
     let videoName : String
     
-    enum ExerciseEnum {
+    enum ExerciseEnum : CustomStringConvertible {
         case Squat
         case Burpee
         case Lunges
