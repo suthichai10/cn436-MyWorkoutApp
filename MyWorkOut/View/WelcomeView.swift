@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct WelcomeView : View {
+    @State private var showTodayProgress = false
     @Binding var selectedTab : Int
+    private let history = HistoryStore()
     var body : some View {
         GeometryReader { geometry in
             VStack {
@@ -31,12 +33,21 @@ struct WelcomeView : View {
                     Spacer()
                 }
                 VStack(alignment:.center) {
+                    let today = history.exerciseDays.first {
+                        Date().isSameDay(as:$0.date)
+                    }
+                    let todayExercise = today?.exercises.count
                     Button(NSLocalizedString("Get Start", comment: "Go Workout")) {
                         selectedTab = 0
                     }.font(.largeTitle)
                     .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
-                    ProgressView(NSLocalizedString("Today Progress :  \(0) / \(Exercise.exercise.count)", comment: "Exercise Progress"),value: Float(0) , total:5)
-                        .frame(width: geometry.size.width * 0.6, height: geometry.size.height * 0.3)
+                    ProgressView(NSLocalizedString("Today Progress :", comment: "Exercise Progress") + " \(todayExercise ?? 0) / \(Exercise.exercise.count)",value: Float(todayExercise ?? 0) , total:Float(Exercise.exercise.count))
+                        .frame(width: geometry.size.width * 0.6, height: geometry.size.height * 0.3).onTapGesture {
+                            showTodayProgress = true
+                        }
+                }
+                .fullScreenCover(isPresented: $showTodayProgress) {
+                    TodayProgressView()
                 }
             }
         }
