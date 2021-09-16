@@ -8,10 +8,16 @@
 import SwiftUI
 
 struct RatingView: View {
+    @AppStorage<Int> var rating : Int
     var body: some View {
         HStack {
-            ForEach(0..<5) { _ in
-                Image(systemName: "star")
+            ForEach(0..<5) { index in
+                Image(systemName: (index > rating) ? "star": "star.fill")
+                    .font(.title)
+                    .foregroundColor((index > rating) ? .none : .yellow)
+                    .onTapGesture {
+                        rating = index
+                    }
             }
         }
     }
@@ -19,7 +25,7 @@ struct RatingView: View {
 
 struct RatingView_Previews: PreviewProvider {
     static var previews: some View {
-        RatingView()
+        RatingView(rating: AppStorage(wrappedValue: 0, "ratingForExercise1"))
             .previewLayout(.sizeThatFits)
     }
 }
