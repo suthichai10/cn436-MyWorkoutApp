@@ -8,17 +8,37 @@
 import SwiftUI
 
 struct TodayProgressView: View {
+    @Environment(\.presentationMode) private var presentationMode
     private let history = HistoryStore()
-    private let today = Date()
     var body: some View {
-        ForEach(history.exerciseDays) { exercise in
-            if Date() == exercise.date {
-                ForEach(0..<exercise.exercises.count) { index in
-                    Text(exercise.exercises[index])
+        VStack(alignment: .leading) {
+            Button("\(Image(systemName: "chevron.left.circle.fill"))") {
+                presentationMode.wrappedValue.dismiss()
+            }
+            .font(.title)
+            .padding()
+            Form {
+                let today = history.exerciseDays.first {
+                    Date().isSameDay(as:$0.date)
+                }
+                ForEach(0..<Exercise.exercise.count) { index in
+                    HStack {
+                        if ((today?.exercises.contains(Exercise.exercise[index].exerciseName)) != nil) {
+                            Text(Exercise.exercise[index].exerciseName)
+                            Spacer()
+                            Image(systemName : "checkmark").foregroundColor(.green)
+                        } else {
+                            Text(Exercise.exercise[index].exerciseName)
+                            Spacer()
+                            Image(systemName : "checkmark").foregroundColor(.red)
+                        }
+
+                    }
+                    .padding()
+                    .font(.system(size: 20 , design:.rounded))
                 }
             }
         }
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
