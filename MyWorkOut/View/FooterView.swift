@@ -9,6 +9,7 @@ import SwiftUI
 
 struct FooterView: View {
     @Binding var selectedTab : Int
+    @Binding var showHistory : Bool
     var body: some View {
         VStack {
             HStack {
@@ -22,7 +23,7 @@ struct FooterView: View {
                 }
             }
             Button(NSLocalizedString("History", comment: "History")) {
-                
+                showHistory = true
             }
             .padding()
         }
@@ -31,7 +32,7 @@ struct FooterView: View {
 
 struct FooterVIew_Previews: PreviewProvider {
     static var previews: some View {
-        FooterView(selectedTab: .constant(0))
+        FooterView(selectedTab: .constant(0), showHistory: .constant(false))
             .previewLayout(.sizeThatFits)
     }
 }
