@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		121469F226EF8DAD0026519F /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121469F126EF8DAD0026519F /* ExerciseView.swift */; };
+		12178EEB26F37C88004BF555 /* TodayProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12178EEA26F37C88004BF555 /* TodayProgressView.swift */; };
 		1230831F26ED20EF000D53A8 /* MyWorkOutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1230831E26ED20EF000D53A8 /* MyWorkOutApp.swift */; };
 		1230832126ED20EF000D53A8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1230832026ED20EF000D53A8 /* ContentView.swift */; };
 		1230832326ED20F1000D53A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1230832226ED20F1000D53A8 /* Assets.xcassets */; };
@@ -18,8 +19,14 @@
 		124D908726EFAE89008A2E5B /* Planks.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 121469EC26EF84FB0026519F /* Planks.mp4 */; };
 		124D908826EFAE8E008A2E5B /* Squat.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 121469ED26EF85040026519F /* Squat.mp4 */; };
 		124D908926EFAE93008A2E5B /* Pushups.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 121469F026EF850B0026519F /* Pushups.mp4 */; };
+		127FCCA026F306A900B9BC86 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127FCC9F26F306A900B9BC86 /* HistoryView.swift */; };
+		127FCCA226F3077100B9BC86 /* HistoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127FCCA126F3077100B9BC86 /* HistoryStore.swift */; };
+		127FCCA426F3090600B9BC86 /* HistoryStroreDevData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127FCCA326F3090600B9BC86 /* HistoryStroreDevData.swift */; };
+		127FCCA726F316F100B9BC86 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127FCCA626F316F100B9BC86 /* DateExtension.swift */; };
+		12B00D6126F3755800711B90 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12B00D6326F3755800711B90 /* Localizable.strings */; };
 		12D16D2D26EF601000F8777A /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D16D2C26EF601000F8777A /* WelcomeView.swift */; };
 		12D16D4026EF72FA00F8777A /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D16D3F26EF72FA00F8777A /* Exercise.swift */; };
+		12ECCBE626F35A7A00935AE9 /* SuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ECCBE526F35A7A00935AE9 /* SuccessView.swift */; };
 		12F696BC26F0B662003966BD /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F696BB26F0B662003966BD /* TimerView.swift */; };
 		12F696BE26F0C81F003966BD /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F696BD26F0C81F003966BD /* FooterView.swift */; };
 		12F696C026F0D460003966BD /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F696BF26F0D460003966BD /* RatingView.swift */; };
@@ -33,14 +40,22 @@
 		121469EF26EF85090026519F /* Burpee.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Burpee.mp4; sourceTree = "<group>"; };
 		121469F026EF850B0026519F /* Pushups.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pushups.mp4; sourceTree = "<group>"; };
 		121469F126EF8DAD0026519F /* ExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
+		12178EEA26F37C88004BF555 /* TodayProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayProgressView.swift; sourceTree = "<group>"; };
 		1230831B26ED20EF000D53A8 /* MyWorkOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWorkOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1230831E26ED20EF000D53A8 /* MyWorkOutApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWorkOutApp.swift; sourceTree = "<group>"; };
 		1230832026ED20EF000D53A8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1230832226ED20F1000D53A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1230832526ED20F1000D53A8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1230832726ED20F1000D53A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		127FCC9F26F306A900B9BC86 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		127FCCA126F3077100B9BC86 /* HistoryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryStore.swift; sourceTree = "<group>"; };
+		127FCCA326F3090600B9BC86 /* HistoryStroreDevData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryStroreDevData.swift; sourceTree = "<group>"; };
+		127FCCA626F316F100B9BC86 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		12B00D6226F3755800711B90 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		12B00D6426F375D300711B90 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/Localizable.strings; sourceTree = "<group>"; };
 		12D16D2C26EF601000F8777A /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		12D16D3F26EF72FA00F8777A /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		12ECCBE526F35A7A00935AE9 /* SuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessView.swift; sourceTree = "<group>"; };
 		12F696BB26F0B662003966BD /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		12F696BD26F0C81F003966BD /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
 		12F696BF26F0D460003966BD /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
@@ -89,6 +104,7 @@
 		1230831D26ED20EF000D53A8 /* MyWorkOut */ = {
 			isa = PBXGroup;
 			children = (
+				127FCCA526F316DE00B9BC86 /* Extension */,
 				121469EA26EF84C40026519F /* Video */,
 				12D16D3E26EF72C400F8777A /* Model */,
 				1230831E26ED20EF000D53A8 /* MyWorkOutApp.swift */,
@@ -96,6 +112,7 @@
 				1230832226ED20F1000D53A8 /* Assets.xcassets */,
 				1230832726ED20F1000D53A8 /* Info.plist */,
 				1230832426ED20F1000D53A8 /* Preview Content */,
+				12B00D6326F3755800711B90 /* Localizable.strings */,
 			);
 			path = MyWorkOut;
 			sourceTree = "<group>";
@@ -104,8 +121,17 @@
 			isa = PBXGroup;
 			children = (
 				1230832526ED20F1000D53A8 /* Preview Assets.xcassets */,
+				127FCCA326F3090600B9BC86 /* HistoryStroreDevData.swift */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		127FCCA526F316DE00B9BC86 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				127FCCA626F316F100B9BC86 /* DateExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		12D16D3D26EF72A200F8777A /* View */ = {
@@ -117,6 +143,9 @@
 				12F696BB26F0B662003966BD /* TimerView.swift */,
 				12F696BD26F0C81F003966BD /* FooterView.swift */,
 				12F696BF26F0D460003966BD /* RatingView.swift */,
+				127FCC9F26F306A900B9BC86 /* HistoryView.swift */,
+				12ECCBE526F35A7A00935AE9 /* SuccessView.swift */,
+				12178EEA26F37C88004BF555 /* TodayProgressView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -125,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				12D16D3F26EF72FA00F8777A /* Exercise.swift */,
+				127FCCA126F3077100B9BC86 /* HistoryStore.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -170,6 +200,7 @@
 			knownRegions = (
 				en,
 				Base,
+				th,
 			);
 			mainGroup = 1230831226ED20EF000D53A8;
 			productRefGroup = 1230831C26ED20EF000D53A8 /* Products */;
@@ -190,6 +221,7 @@
 				124D908426EFAE7B008A2E5B /* Burpee.mp4 in Resources */,
 				124D908926EFAE93008A2E5B /* Pushups.mp4 in Resources */,
 				124D908826EFAE8E008A2E5B /* Squat.mp4 in Resources */,
+				12B00D6126F3755800711B90 /* Localizable.strings in Resources */,
 				1230832626ED20F1000D53A8 /* Preview Assets.xcassets in Resources */,
 				1230832326ED20F1000D53A8 /* Assets.xcassets in Resources */,
 				124D908526EFAE81008A2E5B /* Lunges.mp4 in Resources */,
@@ -205,23 +237,42 @@
 			buildActionMask = 2147483647;
 			files = (
 				12F696BC26F0B662003966BD /* TimerView.swift in Sources */,
+				127FCCA726F316F100B9BC86 /* DateExtension.swift in Sources */,
 				1230832126ED20EF000D53A8 /* ContentView.swift in Sources */,
+				127FCCA226F3077100B9BC86 /* HistoryStore.swift in Sources */,
+				12ECCBE626F35A7A00935AE9 /* SuccessView.swift in Sources */,
 				12F696BE26F0C81F003966BD /* FooterView.swift in Sources */,
 				12F696C026F0D460003966BD /* RatingView.swift in Sources */,
 				12D16D4026EF72FA00F8777A /* Exercise.swift in Sources */,
 				12D16D2D26EF601000F8777A /* WelcomeView.swift in Sources */,
 				1230831F26ED20EF000D53A8 /* MyWorkOutApp.swift in Sources */,
+				127FCCA026F306A900B9BC86 /* HistoryView.swift in Sources */,
+				12178EEB26F37C88004BF555 /* TodayProgressView.swift in Sources */,
+				127FCCA426F3090600B9BC86 /* HistoryStroreDevData.swift in Sources */,
 				121469F226EF8DAD0026519F /* ExerciseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		12B00D6326F3755800711B90 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12B00D6226F3755800711B90 /* en */,
+				12B00D6426F375D300711B90 /* th */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		1230832826ED20F1000D53A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -283,6 +334,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -341,6 +393,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MyWorkOut/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MyWorkOut/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -362,6 +415,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MyWorkOut/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MyWorkOut/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
