@@ -32,13 +32,13 @@ struct ExerciseView : View {
                         Spacer()
                         Button(NSLocalizedString("Done", comment: "Done Button")) {
                             history.addExercise(exercise: Exercise.exercise[index].exerciseName)
+                            let today = history.getTodayExerciseData()
+                            if today!.exercises.count != Exercise.exercise.count {
+                                let index = history.getFirstIncompleteExerciseIndex()!
+                                selectedTab = index
+                                return
+                            }
                             if selectedTab + 1 == Exercise.exercise.count {
-                                let today = history.getTodayExerciseData()
-                                if today!.exercises.count != Exercise.exercise.count {
-                                    let index = history.getFirstIncompleteExerciseIndex()!
-                                    selectedTab = index
-                                    return
-                                }
                                 showSuccess = true
                                 return
                             }
