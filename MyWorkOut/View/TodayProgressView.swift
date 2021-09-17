@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TodayProgressView: View {
     @Environment(\.presentationMode) private var presentationMode
-    private let history = HistoryStore()
+    @EnvironmentObject private var history : HistoryStore
     var body: some View {
         VStack(alignment: .leading) {
             Button("\(Image(systemName: "chevron.left.circle.fill"))") {
@@ -18,21 +18,16 @@ struct TodayProgressView: View {
             .font(.title)
             .padding()
             Form {
-                let today = history.exerciseDays.first {
-                    Date().isSameDay(as:$0.date)
-                }
+                let today = history.getTodayExerciseData()
                 ForEach(0..<Exercise.exercise.count) { index in
                     HStack {
-                        if ((today?.exercises.contains(Exercise.exercise[index].exerciseName)) != nil) {
-                            Text(Exercise.exercise[index].exerciseName)
-                            Spacer()
-                            Image(systemName : "checkmark").foregroundColor(.green)
+                        Text(Exercise.exercise[index].exerciseName)
+                        Spacer()
+                        if today?.exercises != nil , today!.exercises.contains(Exercise.exercise[index].exerciseName) {
+                            Image(systemName: "checkmark").foregroundColor(.green)
                         } else {
-                            Text(Exercise.exercise[index].exerciseName)
-                            Spacer()
-                            Image(systemName : "checkmark").foregroundColor(.red)
+                            Image(systemName: "checkmark").foregroundColor(.red)
                         }
-
                     }
                     .padding()
                     .font(.system(size: 20 , design:.rounded))
@@ -44,6 +39,7 @@ struct TodayProgressView: View {
 
 struct TodayProgressView_Previews: PreviewProvider {
     static var previews: some View {
-        ProgressView()
+        TodayProgressView()
+            .environmentObject(HistoryStore())
     }
 }
