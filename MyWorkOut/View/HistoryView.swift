@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HistoryView: View {
     @Environment(\.presentationMode) var presentationMode
-    private let history = HistoryStore()
+    @EnvironmentObject private var history : HistoryStore
     var body: some View {
         VStack(alignment:.leading) {
             Button("\(Image(systemName: "chevron.left.circle.fill"))") {
@@ -34,5 +34,6 @@ struct HistoryView: View {
 struct HistoryView_Previews: PreviewProvider {
     static var previews: some View {
         HistoryView()
+            .environmentObject(HistoryStore())
     }
 }

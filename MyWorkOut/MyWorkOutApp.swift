@@ -12,6 +12,7 @@ struct MyWorkOutApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(HistoryStore())
         }
     }
 }
