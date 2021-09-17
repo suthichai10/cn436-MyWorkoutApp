@@ -9,7 +9,7 @@ import SwiftUI
 
 extension HistoryStore {
 
-    mutating func createDevData() {
+    func createDevData() {
         exerciseDays = [ExerciseDay(date: Date().addingTimeInterval(-86400), exercises: [
             Exercise.exercise[0].exerciseName,
             Exercise.exercise[1].exerciseName,
