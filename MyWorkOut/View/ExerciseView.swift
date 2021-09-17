@@ -26,7 +26,7 @@ struct ExerciseView : View {
                     HStack {
                         Spacer()
                         Button(NSLocalizedString("Start", comment: "Start Button")) {
-                            //player.play()
+                            player.play()
                             showTimer = true
                         }.border(Color.black)
                         Spacer()
